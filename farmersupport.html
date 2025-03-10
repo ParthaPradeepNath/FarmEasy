@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Support - FarmEasy</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/farmersupport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="public/images/logotrans.png" alt="FarmEasy Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="farmersupport.html" class="active">Farmer Support</a>
+                <a href="resources.html">Resources</a>
+                <a href="index.html#blog">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-dropdown">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                        <option value="ta">தமிழ் (Tamil)</option>
+                    </select>
+                </div>
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Support Header -->
+    <section class="support-header">
+        <div class="container">
+            <h1>Farmer Support Hub</h1>
+            <p>Comprehensive resources and guidance for flood-resilient farming</p>
+        </div>
+    </section>
+
+    <!-- Support Categories -->
+    <section class="support-categories">
+        <div class="container">
+            <div class="category-grid">
+                <a href="#flood-resilient" class="category-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Flood-Resilient Crops</h3>
+                    <p>Discover crops that thrive in flood-prone areas</p>
+                </a>
+                <a href="#soil-conservation" class="category-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Soil Conservation</h3>
+                    <p>Learn effective soil protection techniques</p>
+                </a>
+                <a href="#relief-measures" class="category-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Relief Measures</h3>
+                    <p>Access support resources and emergency aid</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flood-Resilient Crops Section -->
+    <section id="flood-resilient" class="content-section">
+        <div class="container">
+            <h2>Flood-Resilient Crop Recommendations</h2>
+            <div class="content-grid">
+                <article class="content-card">
+                    <div class="card-image">
+                        <img src="public/images/rice.jpg" alt="Deep water rice">
+                    </div>
+                    <div class="card-content">
+                        <h3>Deep Water Rice Varieties</h3>
+                        <p>Discover rice varieties that can survive in deep water conditions for extended periods.</p>
+                        <ul class="feature-list">
+                            <li>Survives water depths up to 4 meters</li>
+                            <li>Enhanced stem elongation ability</li>
+                            <li>Better yield in flood conditions</li>
+                        </ul>
+                        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="content-card">
+                    <div class="card-image">
+                        <img src="public/images/jute.jpg" alt="Jute cultivation">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jute Cultivation</h3>
+                        <p>Learn about jute farming techniques in flood-prone areas.</p>
+                        <ul class="feature-list">
+                            <li>Natural flood resistance</li>
+                            <li>High economic value</li>
+                            <li>Soil enrichment properties</li>
+                        </ul>
+                        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="content-card">
+                    <div class="card-image">
+                        <img src="public/images/Taro and Water-Tolerant Tubers.jpg" alt="Taro plants">
+                    </div>
+                    <div class="card-content">
+                        <h3>Taro and Water-Tolerant Tubers</h3>
+                        <p>Explore water-tolerant tuber crops suitable for flood-prone regions.</p>
+                        <ul class="feature-list">
+                            <li>Excellent flood tolerance</li>
+                            <li>Multiple harvest cycles</li>
+                            <li>High nutritional value</li>
+                        </ul>
+                        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soil Conservation Section -->
+    <section id="soil-conservation" class="content-section bg-light">
+        <div class="container">
+            <h2>Soil Conservation Techniques</h2>
+            <div class="technique-grid">
+                <div class="technique-card">
+                    <i class="fas fa-water"></i>
+                    <h3>Contour Farming</h3>
+                    <p>Learn how to implement contour farming to prevent soil erosion and manage water flow.</p>
+                    <ul class="technique-features">
+                        <li>Reduces soil erosion by up to 50%</li>
+                        <li>Improves water retention</li>
+                        <li>Enhanced nutrient preservation</li>
+                    </ul>
+                    <a href="#" class="technique-link">View Guide</a>
+                </div>
+
+                <div class="technique-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Cover Cropping</h3>
+                    <p>Discover the benefits of cover crops in protecting and enriching your soil.</p>
+                    <ul class="technique-features">
+                        <li>Prevents topsoil loss</li>
+                        <li>Improves soil structure</li>
+                        <li>Natural pest control</li>
+                    </ul>
+                    <a href="#" class="technique-link">View Guide</a>
+                </div>
+
+                <div class="technique-card">
+                    <i class="fas fa-stream"></i>
+                    <h3>Terrace Farming</h3>
+                    <p>Master the art of terrace farming for effective soil and water management.</p>
+                    <ul class="technique-features">
+                        <li>Maximizes land use</li>
+                        <li>Controls water runoff</li>
+                        <li>Prevents landslides</li>
+                    </ul>
+                    <a href="#" class="technique-link">View Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Relief Measures Section -->
+    <section id="relief-measures" class="content-section">
+        <div class="container">
+            <h2>Relief Measures and Resources</h2>
+            <div class="relief-grid">
+                <div class="relief-card emergency">
+                    <h3><i class="fas fa-exclamation-circle"></i> Emergency Support</h3>
+                    <div class="relief-content">
+                        <ul class="emergency-contacts">
+                            <li>
+                                <strong>24/7 Helpline:</strong>
+                                <a href="tel:1800-123-4567">1800-123-4567</a>
+                            </li>
+                            <li>
+                                <strong>SMS Alert Service:</strong>
+                                <span>Text HELP to 56677</span>
+                            </li>
+                            <li>
+                                <strong>WhatsApp Support:</strong>
+                                <a href="https://wa.me/919876543210">+91 98765 43210</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relief-card resources">
+                    <h3><i class="fas fa-hand-holding-heart"></i> Available Resources</h3>
+                    <div class="relief-content">
+                        <ul class="resource-list">
+                            <li>Flood damage compensation</li>
+                            <li>Crop insurance claims</li>
+                            <li>Emergency seed supply</li>
+                            <li>Equipment support</li>
+                            <li>Technical assistance</li>
+                        </ul>
+                        <a href="#" class="relief-link">Apply for Support</a>
+                    </div>
+                </div>
+
+                <div class="relief-card guidelines">
+                    <h3><i class="fas fa-book-open"></i> Relief Guidelines</h3>
+                    <div class="relief-content">
+                        <div class="guideline-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <p>Document damage with photos</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <p>Contact local agriculture officer</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <p>Submit relief application</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <p>Track application status</p>
+                            </div>
+                        </div>
+                        <a href="#" class="relief-link">Download Complete Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Resources -->
+    <section class="support-resources bg-light">
+        <div class="container">
+            <h2>Additional Resources</h2>
+            <div class="resources-grid">
+                <a href="#" class="resource-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Flood Management Guide</span>
+                </a>
+                <a href="#" class="resource-item">
+                    <i class="fas fa-video"></i>
+                    <span>Training Videos</span>
+                </a>
+                <a href="#" class="resource-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Workshop Schedule</span>
+                </a>
+                <a href="#" class="resource-item">
+                    <i class="fas fa-users"></i>
+                    <span>Farmer Community</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <img src="public/images/logotrans.png" alt="FarmEasy Logo" class="footer-logo">
+                    <p>Protecting farms through early flood detection and prevention.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 80119 67546</li>
+                        <li><i class="fas fa-envelope"></i> info@farmeasy.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Assam Downtown, Guwahati</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 FarmEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/farmersupport.js"></script>
+</body>
+</html> 

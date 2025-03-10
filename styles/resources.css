@@ -1,0 +1,338 @@
+/* Resources Header */
+.resources-header {
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.4), rgba(27, 94, 32, 0.5));
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resources-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/images/farm2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.resources-header .container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+/* Resource Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background-color: white;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(46, 125, 50, 0.1);
+    border-color: var(--primary-color);
+}
+
+.category-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover i {
+    transform: scale(1.1);
+}
+
+/* Resources Grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(46, 125, 50, 0.1);
+}
+
+.resource-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.resource-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover .resource-image img {
+    transform: scale(1.1);
+}
+
+.resource-content {
+    padding: 1.5rem;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    transition: gap 0.3s ease;
+}
+
+.read-more:hover {
+    gap: 1rem;
+}
+
+/* Research List */
+.resources-section {
+    padding: 6rem 0;
+    margin: 2rem 0;
+}
+
+.resources-section.bg-light {
+    padding: 8rem 0;
+    margin: 3rem 0;
+    background: var(--light-background);
+}
+
+.section-divider {
+    height: 4rem;
+}
+
+.research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.research-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.research-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--primary-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.research-item:hover::before {
+    opacity: 1;
+}
+
+.research-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.research-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.research-tag {
+    background: var(--light-background);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.research-meta {
+    display: flex;
+    gap: 2rem;
+    color: var(--light-text);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.research-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.research-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    background: var(--light-background);
+    border-radius: 0.5rem;
+    height: fit-content;
+}
+
+.download-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    transition: gap 0.3s ease;
+}
+
+.download-link:hover {
+    gap: 1rem;
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: var(--light-background);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    padding-right: 2rem;
+    flex: 1;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0.5rem;
+    flex-shrink: 0;
+}
+
+.faq-item.active .toggle-btn {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 0 1.5rem;
+    background-color: var(--light-background);
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+.faq-item.active .faq-answer {
+    height: auto;
+    opacity: 1;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Ensure smooth transition */
+.faq-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-item.active {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Improve readability */
+.faq-answer p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .research-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .research-date {
+        width: fit-content;
+    }
+} 

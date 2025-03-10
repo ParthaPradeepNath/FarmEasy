@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Community - FarmEasy</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="public/images/logotrans.png" alt="FarmEasy Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="farmersupport.html">Farmer Support</a>
+                <a href="resources.html">Resources</a>
+                <a href="community.html" class="active">Community</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-dropdown">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                        <option value="ta">தமிழ் (Tamil)</option>
+                        <option value="mr">मराठी (Marathi)</option>
+                        <option value="gu">ગુજરાતી (Gujarati)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                        <option value="as">অসমীয়া (Assamese)</option>
+                    </select>
+                </div>
+                <div class="auth-buttons">
+                    <button class="login-btn" id="loginBtn">Login</button>
+                    <button class="register-btn" id="registerBtn">Register</button>
+                </div>
+                <!-- User Profile Menu (hidden by default) -->
+                <div class="user-profile hidden" id="userProfile">
+                    <div class="user-avatar-wrapper">
+                        <div class="avatar">U</div>
+                        <span class="user-status online"></span>
+                    </div>
+                    <div class="profile-dropdown">
+                        <div class="profile-header">
+                            <div class="dropdown-avatar">U</div>
+                            <div class="profile-info">
+                                <h4 class="profile-name">User Name</h4>
+                                <span class="profile-email">user@example.com</span>
+                            </div>
+                        </div>
+                        <div class="profile-links">
+                            <a href="#" class="profile-link"><i class="fas fa-user"></i> My Profile</a>
+                            <a href="#" class="profile-link"><i class="fas fa-edit"></i> My Posts</a>
+                            <a href="#" class="profile-link"><i class="fas fa-bookmark"></i> Saved</a>
+                            <a href="#" class="profile-link"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="#" class="profile-link logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Community Header -->
+    <section class="community-header">
+        <div class="container">
+            <div class="header-text">
+                <h1>Farmer Community</h1>
+                <p>Connect, Share, and Learn from Fellow Farmers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="community-layout">
+        <!-- Sidebar -->
+        <aside class="community-sidebar">
+            <div class="sidebar-section">
+                <h3>Communities</h3>
+                <ul class="community-list">
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> All Posts</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Popular</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Recent</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#"><i class="fas fa-seedling"></i> Crop Management</a></li>
+                    <li><a href="#"><i class="fas fa-cloud-rain"></i> Weather Updates</a></li>
+                    <li><a href="#"><i class="fas fa-tractor"></i> Equipment</a></li>
+                    <li><a href="#"><i class="fas fa-leaf"></i> Organic Farming</a></li>
+                    <li><a href="#"><i class="fas fa-water"></i> Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>States</h3>
+                <ul class="state-list">
+                    <li><a href="#">Assam</a></li>
+                    <li><a href="#">West Bengal</a></li>
+                    <li><a href="#">Bihar</a></li>
+                    <li><a href="#">Uttar Pradesh</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="community-main">
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="post-avatar">U</div>
+                <button class="post-input-btn" id="createPostBtn">
+                    <i class="fas fa-edit"></i> Share your thoughts or questions...
+                </button>
+                <div class="post-actions">
+                    <button class="post-action-btn"><i class="fas fa-image"></i> Photo</button>
+                    <button class="post-action-btn"><i class="fas fa-video"></i> Video</button>
+                    <button class="post-action-btn"><i class="fas fa-link"></i> Link</button>
+                </div>
+            </div>
+
+            <!-- Post Feed -->
+            <div class="post-feed">
+                <!-- Sample Post 1 -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-avatar">R</div>
+                        <div class="post-meta">
+                            <h4 class="post-author">Rajesh Kumar</h4>
+                            <span class="post-time">2 hours ago</span>
+                        </div>
+                        <button class="post-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Just implemented a new irrigation system that's helped me save 30% water! Here are some photos of the setup. Let me know if anyone wants details about the installation.</p>
+                        <div class="post-images">
+                            <img src="public/images/farm1.jpg" alt="Irrigation System">
+                        </div>
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="fas fa-thumbs-up"></i> 45 likes</span>
+                        <span><i class="fas fa-comment"></i> 12 comments</span>
+                        <span><i class="fas fa-share"></i> 5 shares</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="post-action-btn"><i class="fas fa-thumbs-up"></i> Like</button>
+                        <button class="post-action-btn"><i class="fas fa-comment"></i> Comment</button>
+                        <button class="post-action-btn"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="comments-section">
+                        <div class="comment">
+                            <div class="comment-avatar">P</div>
+                            <div class="comment-content">
+                                <h5>Priya Singh</h5>
+                                <p>This looks great! Could you share more details about the cost and installation process?</p>
+                                <div class="comment-actions">
+                                    <button>Like</button>
+                                    <button>Reply</button>
+                                    <span>1 hour ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Comment -->
+                        <div class="add-comment">
+                            <div class="comment-avatar">U</div>
+                            <input type="text" placeholder="Write a comment..." class="comment-input">
+                            <button class="comment-submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sample Post 2 -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-avatar">A</div>
+                        <div class="post-meta">
+                            <h4 class="post-author">Amit Patel</h4>
+                            <span class="post-time">5 hours ago</span>
+                        </div>
+                        <button class="post-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Looking for advice on flood-resistant rice varieties suitable for Assam region. Has anyone tried the new hybrid varieties?</p>
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="fas fa-thumbs-up"></i> 32 likes</span>
+                        <span><i class="fas fa-comment"></i> 8 comments</span>
+                        <span><i class="fas fa-share"></i> 3 shares</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="post-action-btn"><i class="fas fa-thumbs-up"></i> Like</button>
+                        <button class="post-action-btn"><i class="fas fa-comment"></i> Comment</button>
+                        <button class="post-action-btn"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="community-sidebar right">
+            <div class="sidebar-section">
+                <h3>Trending Topics</h3>
+                <ul class="trending-list">
+                    <li>
+                        <span class="trend-tag">#OrganicFarming</span>
+                        <span class="trend-count">2.5k posts</span>
+                    </li>
+                    <li>
+                        <span class="trend-tag">#FloodAlert</span>
+                        <span class="trend-count">1.8k posts</span>
+                    </li>
+                    <li>
+                        <span class="trend-tag">#CropInsurance</span>
+                        <span class="trend-count">950 posts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Active Communities</h3>
+                <ul class="active-communities">
+                    <li>
+                        <img src="public/images/rice.jpg" alt="Rice Farmers">
+                        <div class="community-info">
+                            <h4>Rice Farmers</h4>
+                            <span>15.2k members</span>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </li>
+                    <li>
+                        <img src="public/images/organic.jpg" alt="Organic Farming">
+                        <div class="community-info">
+                            <h4>Organic Farming</h4>
+                            <span>8.7k members</span>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div class="modal" id="createPostModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create Post</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="post-form">
+                    <div class="form-group">
+                        <select class="post-category">
+                            <option value="">Select Category</option>
+                            <option value="crops">Crops</option>
+                            <option value="weather">Weather</option>
+                            <option value="equipment">Equipment</option>
+                            <option value="organic">Organic Farming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="What's on your mind?" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag and drop files here or click to upload</p>
+                            <input type="file" multiple hidden>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="secondary-btn">Cancel</button>
+                <button class="primary-btn">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="login-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="primary-btn">Login</button>
+                    </div>
+                    <div class="social-login">
+                        <div class="divider">
+                            <span>Or continue with</span>
+                        </div>
+                        <button type="button" class="google-btn" id="googleLoginBtn">
+                            <img src="public/images/google-icon.png" alt="Google Icon">
+                            Sign in with Google
+                        </button>
+                    </div>
+                    <p class="form-footer">Don't have an account? <a href="#" id="showRegister">Register</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Register</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="register-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select State</option>
+                            <option value="assam">Assam</option>
+                            <option value="bengal">West Bengal</option>
+                            <option value="bihar">Bihar</option>
+                            <option value="up">Uttar Pradesh</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="primary-btn">Register</button>
+                    </div>
+                    <div class="social-login">
+                        <div class="divider">
+                            <span>Or register with</span>
+                        </div>
+                        <button type="button" class="google-btn" id="googleRegisterBtn">
+                            <img src="public/images/google-icon.png" alt="Google Icon">
+                            Sign up with Google
+                        </button>
+                    </div>
+                    <p class="form-footer">Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/js/community.js"></script>
+</body>
+</html> 

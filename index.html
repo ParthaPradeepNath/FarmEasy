@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle">FarmEasy - Flood Alert System</title>
+    <meta name="description" data-i18n-meta="pageDescription" content="Early flood detection and prevention system for farmers">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="public/images/logotrans.png" alt="FarmEasy Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#home" data-nav-key="home">Home</a>
+                <a href="#about" data-nav-key="aboutUs">About Us</a>
+                <a href="farmersupport.html" data-nav-key="farmerSupport">Farmer Support</a>
+                <a href="resources.html" data-nav-key="resources">Resources</a>
+                <a href="community.html" data-nav-key="community">Community</a>
+                <a href="contact.html" data-nav-key="contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-dropdown">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="as">অসমীয়া (Assamese)</option>
+                    </select>
+                </div>
+                <div class="auth-buttons">
+                    <button class="login-btn" data-btn-key="login">Login</button>
+                    <button class="register-btn" data-btn-key="register">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 data-i18n="heroTitle">Welcome to FarmEasy</h1>
+            <p data-i18n="heroSubtitle">Protecting Farms Through Early Flood Detection</p>
+            <div class="cta-buttons">
+                <button class="primary-btn" data-i18n="getAlerts">Get Alerts</button>
+                <button class="secondary-btn" data-i18n="learnMore">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-i18n="aboutUs">About Us</h2>
+            <div class="about-grid">
+                <div class="about-card animate-on-scroll">
+                    <i class="fas fa-bullseye"></i>
+                    <h3 data-i18n="ourMission">Our Mission</h3>
+                    <p data-i18n="missionDesc">Empowering farmers with advanced flood prediction technology to protect their crops and livelihoods.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <i class="fas fa-eye"></i>
+                    <h3 data-i18n="ourVision">Our Vision</h3>
+                    <p data-i18n="visionDesc">Creating a resilient agricultural community through technology and innovation.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <i class="fas fa-users"></i>
+                    <h3 data-i18n="ourTeam">Our Team</h3>
+                    <p data-i18n="teamDesc">Expert scientists, engineers, and agricultural specialists working together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Collection Section -->
+    <section id="data" class="section bg-light">
+        <div class="container">
+            <h2>Data Collection</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <img src="public/images/wheat.jpg" alt="Crop Management">
+                    <h3 data-i18n="cropManagement">Crop Management</h3>
+                    <p data-i18n="cropManagementDesc">Track and optimize your crop growth with real-time data.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <img src="public/images/farm1.jpg" alt="Satellite Imagery">
+                    <h3 data-i18n="satelliteImagery">Satellite Imagery</h3>
+                    <p data-i18n="satelliteImageryDesc">High-resolution satellite data for comprehensive monitoring.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <img src="public/images/weathercard.jpg" alt="Weather Data">
+                    <h3 data-i18n="weatherData">Weather Data</h3>
+                    <p data-i18n="weatherDataDesc">Integration with meteorological data for accurate predictions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmer Support Preview Section -->
+    <section id="support" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="farmerSupport">Farmer Support</h2>
+                <p data-i18n="farmerSupportDesc">Comprehensive resources and guidance for flood-resilient farming</p>
+            </div>
+            <div class="support-preview-grid">
+                <div class="preview-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3 data-i18n="floodResilientCrops">Flood-Resilient Crops</h3>
+                    <p data-i18n="cropsDesc">Discover crops that thrive in flood-prone areas</p>
+                </div>
+                <div class="preview-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3 data-i18n="soilConservation">Soil Conservation</h3>
+                    <p data-i18n="soilDesc">Learn effective soil protection techniques</p>
+                </div>
+                <div class="preview-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3 data-i18n="reliefMeasures">Relief Measures</h3>
+                    <p data-i18n="reliefDesc">Access support resources and emergency aid</p>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="farmersupport.html" class="primary-btn" data-i18n="exploreSupport">Explore All Support Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <img src="public/images/Untitled Project - Standard (1).png" alt="Flood Alert Logo" class="footer-logo">
+                    <p data-i18n="heroSubtitle">Protecting farms through early flood detection and prevention.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-nav-key="home">Home</a></li>
+                        <li><a href="#about" data-nav-key="aboutUs">About Us</a></li>
+                        <li><a href="farmersupport.html" data-nav-key="farmerSupport">Farmer Support</a></li>
+                        <li><a href="resources.html" data-nav-key="resources">Resources</a></li>
+                        <li><a href="community.html" data-nav-key="community">Community</a></li>
+                        <li><a href="contact.html" data-nav-key="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contactUs">Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <span data-i18n="phone">+91 80119 67546</span></li>
+                        <li><i class="fas fa-envelope"></i> <span data-i18n="email">info@farmeasy.com</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="address">Assam Downtown, Guwahati</span></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="followUs">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">© 2024 FarmEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html> 

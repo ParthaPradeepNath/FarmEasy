@@ -1,0 +1,489 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #95BB76;
+    --secondary-color: #97935C;
+    --accent-color: #8BE3E1;
+    --highlight-color: #D3F7AD;
+    --dark-accent: #8B322C;
+
+    /* Derived Colors */
+    --hover-color: #86aa69;
+    --text-color: #333333;
+    --light-text: #666666;
+    --border-color: #e0e0e0;
+    
+    /* Background Colors */
+    --light-background: rgba(149, 187, 118, 0.1);
+    --secondary-background: rgba(151, 147, 92, 0.1);
+    --accent-background: rgba(139, 227, 225, 0.1);
+    
+    /* Button Colors */
+    --primary-btn-bg: #95BB76;
+    --primary-btn-hover: #86aa69;
+    --secondary-btn-bg: #97935C;
+    --secondary-btn-hover: #868350;
+    
+    /* Status Colors */
+    --success-color: #95BB76;
+    --error-color: #8B322C;
+    --warning-color: #97935C;
+    --info-color: #8BE3E1;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.bg-light {
+    background-color: var(--light-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+.primary-btn {
+    background: var(--primary-btn-bg);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: var(--primary-btn-hover);
+}
+
+.secondary-btn {
+    background: var(--secondary-btn-bg);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background: var(--secondary-btn-hover);
+}
+
+.about-grid, .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-card, .feature-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.about-card:hover, .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px -1px rgba(46, 125, 50, 0.15);
+    border-color: var(--accent-color);
+}
+
+.about-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-section ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* RTL Support */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* RTL Navigation */
+body.rtl .nav-links {
+    flex-direction: row-reverse;
+}
+
+body.rtl .nav-right {
+    flex-direction: row-reverse;
+}
+
+body.rtl .auth-buttons {
+    flex-direction: row-reverse;
+}
+
+/* RTL Cards and Grids */
+body.rtl .about-grid,
+body.rtl .features-grid,
+body.rtl .footer-grid {
+    direction: rtl;
+}
+
+body.rtl .about-card i,
+body.rtl .feature-card i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* RTL Lists */
+body.rtl ul {
+    padding-right: 0;
+    padding-left: 1.5rem;
+}
+
+body.rtl .footer-section ul {
+    padding-right: 0;
+}
+
+/* RTL Icons */
+body.rtl .fa,
+body.rtl .fas,
+body.rtl .far,
+body.rtl .fab {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* Language-specific font families */
+/* Hindi */
+:lang(hi) {
+    font-family: 'Noto Sans Devanagari', var(--font-family);
+}
+
+/* Bengali */
+:lang(bn) {
+    font-family: 'Noto Sans Bengali', var(--font-family);
+}
+
+/* Telugu */
+:lang(te) {
+    font-family: 'Noto Sans Telugu', var(--font-family);
+}
+
+/* Tamil */
+:lang(ta) {
+    font-family: 'Noto Sans Tamil', var(--font-family);
+}
+
+/* Marathi */
+:lang(mr) {
+    font-family: 'Noto Sans Devanagari', var(--font-family);
+}
+
+/* Gujarati */
+:lang(gu) {
+    font-family: 'Noto Sans Gujarati', var(--font-family);
+}
+
+/* Kannada */
+:lang(kn) {
+    font-family: 'Noto Sans Kannada', var(--font-family);
+}
+
+/* Assamese */
+:lang(as) {
+    font-family: 'Noto Sans Bengali', var(--font-family);
+}
+
+/* Font loading */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&family=Noto+Sans+Gujarati:wght@400;500;700&family=Noto+Sans+Kannada:wght@400;500;700&family=Noto+Sans+Tamil:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;700&display=swap');
+
+/* Farmer Support Preview Section */
+.support-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.preview-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(46, 125, 50, 0.1);
+    border-color: var(--primary-color);
+}
+
+.preview-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.preview-card:hover i {
+    transform: scale(1.1);
+}
+
+.preview-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.preview-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.section-footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.section-footer .primary-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Link Styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* Form Styles */
+input, select, textarea {
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(149, 187, 118, 0.2);
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Indicators */
+.status-success {
+    color: var(--success-color);
+}
+
+.status-error {
+    color: var(--error-color);
+}
+
+.status-warning {
+    color: var(--warning-color);
+}
+
+.status-info {
+    color: var(--info-color);
+}
+
+/* Background Utilities */
+.bg-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.bg-highlight {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+.bg-dark-accent {
+    background-color: var(--dark-accent);
+    color: white;
+}
+
+/* Text Utilities */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-highlight {
+    color: var(--highlight-color);
+}
+
+.text-dark-accent {
+    color: var(--dark-accent);
+} 
